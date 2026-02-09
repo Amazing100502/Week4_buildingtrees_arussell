@@ -25,20 +25,18 @@ class TeamTree:
     '''
     
     company_directory = TeamTree()
-    print(company_directory.root) #None
-    company_directory.root = EmployeeNode("Ms. Manager")
-    company_directory.insert("Ms. Manager", "Employee #1", "right")
-    company_directory.insert("Ms. Manager", "Employee #2", "left")
-    print(company_directory.root.right.name) #Employee #1
-    print(company_directory.root.left.name) #Employee #2
+    company_directory.root = EmployeeNode("Samantha")
+    company_directory.insert("Samantha", "Jeremiah", "right")
+    company_directory.insert("Samantha", "Amy", "left")
+    company_directory.insert("Amy", "Lucas", "right")
+    company_directory.insert("Amy", "Susan", "left")
+    company_directory.print_tree() 
+ 
 
     print_tree(self, node=None, level=0) 
     pass
 
 # Test your code here
-
-
-
 
 
 
@@ -81,3 +79,7 @@ def company_directory():
             break
         else:
             print("❌ Invalid option. Try again.")
+
+git add .
+git commit -m "Debugged final output issues"
+git push
