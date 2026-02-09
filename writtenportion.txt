@@ -1,0 +1,8 @@
+''' This program models a team hierarchy using a binary‑tree structure, and the design centers on representing each employee as a node with up to two direct reports. The `EmployeeNode` class stores an employee’s name along with references to a left and right child, which represent subordinate positions. New nodes begin with both child references set to `None`, allowing the tree to grow dynamically as employees are added.
+
+The `TeamTree` class manages the overall structure. Its `root` attribute holds the team lead, functioning as the top of the hierarchy. The `insert` method is responsible for placing new employees under the correct manager. It searches through the tree to locate the manager’s node and then attaches the new employee to either the left or right side based on user input. This approach maintains the binary‑tree constraint while still allowing flexible team organization.
+
+To visualize the hierarchy, the `print_tree` method prints the structure recursively with indentation that reflects each employee’s depth in the tree. By printing the right subtree first, followed by the current node and then the left subtree, the output forms a readable, rotated representation of the team.
+
+The command‑line interface ties these components together by allowing users to add a team lead, insert employees, and display the current structure. Each menu option triggers the appropriate tree operation, making it possible to build and inspect the hierarchy interactively. This design demonstrates how binary trees can effectively represent organizational reporting relationships while keeping the implementation simple and intuitive.''' 
+
