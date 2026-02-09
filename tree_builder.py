@@ -7,7 +7,10 @@ class EmployeeNode:
         right (EmployeeNode): The right child node, representing the right subordinate.
     '''
 
-    # Delete this line and implement the class below
+    employee_1 = EmployeeNode("Samantha")
+    print(employee_1.name) #Samantha
+    print(employee_1.left) #None
+    print(employee_1.right) #None
     pass
 
 class TeamTree:
@@ -21,7 +24,8 @@ class TeamTree:
 
     '''
     
-    # Delete this line and implement the class below
+    company_directory = TeamTree()
+    print(company_directory.root) #None
     pass
 
 # Test your code here
