@@ -26,6 +26,7 @@ class TeamTree:
     
     company_directory = TeamTree()
     print(company_directory.root) #None
+    company_directory.root = EmployeeNode("
     pass
 
 # Test your code here
