@@ -26,7 +26,13 @@ class TeamTree:
     
     company_directory = TeamTree()
     print(company_directory.root) #None
-    company_directory.root = EmployeeNode("
+    company_directory.root = EmployeeNode("Ms. Manager")
+    company_directory.insert("Ms. Manager", "Employee #1", "right")
+    company_directory.insert("Ms. Manager", "Employee #2", "left")
+    print(company_directory.root.right.name) #Employee #1
+    print(company_directory.root.left.name) #Employee #2
+
+    print_tree(self, node=None, level=0) 
     pass
 
 # Test your code here
